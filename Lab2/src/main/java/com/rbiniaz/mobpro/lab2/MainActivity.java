@@ -3,10 +3,12 @@ package com.rbiniaz.mobpro.lab2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -15,46 +17,47 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
 
-        final TextView title = (TextView) findViewById(R.id.titleField);
-        final TextView note = (TextView) findViewById(R.id.noteField);
-        Button save = (Button)findViewById(R.id.saveButton);
-        final ListView notes = (ListView) findViewById(R.id.noteList);
+        setContentView(R.layout.photo_list);
 
-        final NotesDbAdapter dbAdapter = new NotesDbAdapter(this);
-        dbAdapter.open();
+        final ImageView imgView;
+        imgView = (ImageView) findViewById(R.id.listImageView);
+        imgView.setImageResource(R.drawable.shoplist);
 
-        final NotesListCursorAdapter adapter = new NotesListCursorAdapter(this, dbAdapter.getAllNotes(), dbAdapter);
-        notes.setAdapter(adapter);
+        Button takePhoto = (Button) findViewById(R.id.CaptureButton);
+        Button usePrevious = (Button) findViewById(R.id.PreviousListButton);
+        Button showAll = (Button) findViewById(R.id.AllWICButton);
 
-
-        save.setOnClickListener(new View.OnClickListener() {
+        takePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String fileName = title.getText().toString();
-                String noteText = note.getText().toString();
-                if (fileName != null && noteText != null){
-                    dbAdapter.createNote(fileName, noteText);
-                    adapter.changeCursor(dbAdapter.getAllNotes());
-                    title.setText("");
-                    note.setText("");
-                }
+                goToVirtualReality(view);
             }
         });
 
-        save.setFocusable(false);
-
-        notes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        usePrevious.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Note note  = ((NotesListCursorAdapter.ViewHolder) view.getTag()).note;
-                Intent in = new Intent(getApplicationContext(), NoteDetailActivity.class);
-                in.putExtra("name", note.getName());
-                in.putExtra("contents", note.getContents());
-                startActivity(in);
+            public void onClick(View view) {
+                goToVirtualReality(view);
             }
         });
+
+        showAll.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                goToVirtualReality(view);
+            }
+        });
+
+
+    }
+
+
+    public void goToVirtualReality(View view){
+        Intent i = new Intent(this, VirtualRealityActivity.class);
+        startActivity(i);
+
+
     }
 
 

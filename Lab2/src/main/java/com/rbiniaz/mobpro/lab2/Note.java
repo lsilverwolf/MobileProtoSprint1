@@ -5,13 +5,11 @@ package com.rbiniaz.mobpro.lab2;
  */
 public class Note {
     private long id;
-    private String name;
-    private String contents;
+    private String listitem;
 
-    public Note(long id, String name, String contents) {
+    public Note(long id, String listitem) {
         this.id = id;
-        this.name = name;
-        this.contents = contents;
+        this.listitem = listitem;
     }
 
     public long getId() {
@@ -23,27 +21,18 @@ public class Note {
     }
 
     public String getName() {
-        return name;
+        return listitem;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getContents() {
-        return contents;
-    }
-
-    public void setContents(String contents) {
-        this.contents = contents;
+    public void setName(String listitem) {
+        this.listitem = listitem;
     }
 
     @Override
     public String toString() {
         return "Note{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
-                ", contents='" + contents + '\'' +
+                ", name='" + listitem + '\'' +
                 '}';
     }
 }

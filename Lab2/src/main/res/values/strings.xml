@@ -6,5 +6,7 @@
     <string name="save">Save Note</string>
     <string name="title_field">File name: </string>
     <string name="deleteDesc">Delete file</string>
+    <string name="virtualReality">virtualReality</string>
+    <string name="changeButton">C</string>
 
 </resources>

@@ -19,8 +19,7 @@ public class NotesDbAdapter {
 
     private static final String TABLE_NAME = "notes";
     private static final String COLUMN_ID = "_id";
-    private static final String COLUMN_TITLE = "title";
-    private static final String COLUMN_CONTENTS = "contents";
+    private static final String COLUMN_LIST_ITEM = "listitem";
 
     private final Context context;
     private NotesDbHelper dbHelper;
@@ -41,14 +40,13 @@ public class NotesDbAdapter {
     }
 
 
-    public Note createNote(String name, String contents) {
+    public Note createNote(String listItem) {
 
         ContentValues values = new ContentValues();
-        values.put(COLUMN_TITLE, name);
-        values.put(COLUMN_CONTENTS, contents);
+        values.put(COLUMN_LIST_ITEM, listItem);
         long id = db.insert(TABLE_NAME, null, values);
 
-        return new Note(id, name, contents);
+        return new Note(id, listItem);
     }
 
 
@@ -57,7 +55,7 @@ public class NotesDbAdapter {
     }
 
     public Note getNote(long id){
-        Cursor cursor = db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_TITLE, COLUMN_CONTENTS}, COLUMN_ID + "=" + id, null, null, null, null, null);
+        Cursor cursor = db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_LIST_ITEM}, COLUMN_ID + "=" + id, null, null, null, null, null);
         if (cursor != null) {
             cursor.moveToFirst();
         }
@@ -66,20 +64,19 @@ public class NotesDbAdapter {
     }
 
     public Cursor getAllNotes(){
-        return db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_TITLE, COLUMN_CONTENTS}, null, null, null, null, null, null);
+        return db.query(true, TABLE_NAME, new String[] {COLUMN_ID, COLUMN_LIST_ITEM}, null, null, null, null, null, null);
     }
 
     public static Note noteFromCursor(Cursor cursor){
         return new Note(cursor.getLong(cursor.getColumnIndex(COLUMN_ID)),
-                        cursor.getString(cursor.getColumnIndex(COLUMN_TITLE)),
-                        cursor.getString(cursor.getColumnIndex(COLUMN_CONTENTS)));
+                        cursor.getString(cursor.getColumnIndex(COLUMN_LIST_ITEM)));
     }
 
 
     private class NotesDbHelper extends SQLiteOpenHelper {
 
         private static final String CREATE_DATABASE = "CREATE TABLE " + TABLE_NAME + " (" +
-                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_TITLE + " TEXT, " + COLUMN_CONTENTS + " TEXT)";
+                COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COLUMN_LIST_ITEM + " TEXT)";
 
         public NotesDbHelper(Context context) {
             super(context, DATABASE_NAME, null, DATABASE_VERSION);
