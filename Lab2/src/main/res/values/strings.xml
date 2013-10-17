@@ -8,5 +8,11 @@
     <string name="deleteDesc">Delete file</string>
     <string name="virtualReality">virtualReality</string>
     <string name="changeButton">C</string>
+    <string name="new_list">Capture new list</string>
+    <string name="list_filter_off">Turn list filter off</string>
+    <string name="list_filter_on">Turn list filter on</string>
+    <string name="list_filter">List filter</string>
+    <string name="view_list">View list</string>
+    <string name="done">Done</string>
 
 </resources>

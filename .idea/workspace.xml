@@ -11,29 +11,24 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="rbin" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d54e489-9c16-48cd-a6d8-accbfde776dc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/drawable-mdpi/mywicgenie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/drawable-xhdpi/mywicgenie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/drawable-xxhdpi/mywicgenie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/drawable-mdpi/shoplist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/drawable-xhdpi/shoplist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/drawable-xxhdpi/shoplist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity_old.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MobileProtoSprint1.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/layout/photo_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/layout/virtual_reality.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NoteListAdapter.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/layout/list_dialog.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lab2/src/main/res/menu/virtual_reality.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab2/src/main/gen/com/rbiniaz/mobpro/lab2/BuildConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab2/src/main/gen/com/rbiniaz/mobpro/lab2/Manifest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab2/src/main/gen/com/rbiniaz/mobpro/lab2/R.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Lab2/src/main/res/menu/main.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/Lab2.iml" afterPath="$PROJECT_DIR$/Lab2/Lab2.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/Note.java" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/Note.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesDbAdapter.java" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesDbAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity_old.java" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity_old.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java" afterPath="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lab2/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/Lab2/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MobileProtoSprint1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,7 +46,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -88,6 +82,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -100,79 +95,66 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="41" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="377" max-vertical-offset="855">
-              <folding>
-                <element signature="e#973#1134#0" expanded="true" />
-                <element signature="e#1123#1124#0" expanded="true" />
-              </folding>
+            <state line="55" column="0" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="645">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="photo_list.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/layout/photo_list.xml">
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
+      <file leaf-file-name="VirtualRealityActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="185" column="225" selection-start="7173" selection-end="7173" vertical-scroll-proportion="0.9966555" vertical-offset="1909" max-vertical-offset="2820">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shoplist.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/drawable-xxhdpi/shoplist.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="18" selection-start="694" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_dialog.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/layout/list_dialog.xml">
+          <provider editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="46" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-              <folding>
-                <element signature="e#735#753#0" expanded="true" />
-                <element signature="e#904#922#0" expanded="true" />
-                <element signature="e#1263#1281#0" expanded="true" />
-                <element signature="e#1422#1446#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VirtualRealityActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="63" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#611#863#0" expanded="true" />
-                <element signature="e#852#853#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/menu/main.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="478">
-              <folding>
-                <element signature="e#132#157#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotesListCursorAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesListCursorAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+            <state line="7" column="33" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NoteDetailActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NoteDetailActivity.java">
+      <file leaf-file-name="virtual_reality.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/menu/virtual_reality.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-              <folding />
+            <state line="11" column="39" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <folding>
+                <element signature="e#135#156#0" expanded="false" />
+                <marker date="1382010580000" expanded="true" signature="473:591" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -533,7 +515,7 @@
       <map>
         <entry key="$PROJECT_DIR$/../Lab3" value="1379699844000" />
         <entry key="$PROJECT_DIR$/../Lab5" value="1380552564000" />
-        <entry key="$PROJECT_DIR$" value="1379593922000" />
+        <entry key="$PROJECT_DIR$" value="1381939260000" />
       </map>
     </option>
   </component>
@@ -544,19 +526,21 @@
         <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/Note.java" />
         <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesDbAdapter.java" />
         <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/ShoppingListActivity.java" />
-        <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java" />
         <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity_old.java" />
-        <option value="$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java" />
         <option value="$PROJECT_DIR$/Lab2/src/main/res/layout/photo_list.xml" />
         <option value="$PROJECT_DIR$/Lab2/src/main/res/menu/main.xml" />
+        <option value="$PROJECT_DIR$/Lab2/src/main/res/menu/virtual_reality.xml" />
+        <option value="$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/Lab2/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java" />
+        <option value="$PROJECT_DIR$/Lab2/src/main/res/layout/list_dialog.xml" />
+        <option value="$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -584,6 +568,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -720,7 +706,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
+              <option name="myItemId" value="drawable-xxhdpi" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,8 +742,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -768,8 +752,10 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="1b1e299f" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="MyAVD" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -810,6 +796,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -835,19 +834,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -941,35 +927,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6710875" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32878152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27312776" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3119748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2129743" sideWeight="0.6712185" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277311" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.6710875" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -984,23 +970,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/local.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="728">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.2222223" vertical-offset="87" max-vertical-offset="1020">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/Note.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="1" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
@@ -1008,23 +977,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NoteDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesDbAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="42" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesListCursorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
@@ -1041,65 +996,93 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="46" selection-start="924" selection-end="924" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
-          <folding>
-            <element signature="e#735#753#0" expanded="true" />
-            <element signature="e#904#922#0" expanded="true" />
-            <element signature="e#1263#1281#0" expanded="true" />
-            <element signature="e#1422#1446#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="63" selection-start="839" selection-end="839" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#611#863#0" expanded="true" />
-            <element signature="e#852#853#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="41" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="855">
-          <folding>
-            <element signature="e#973#1134#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/layout/virtual_reality.xml">
+      <provider editor-type-id="text-editor">
+        <state line="13" column="36" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300" />
+      </provider>
       <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="13" column="36" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NotesListCursorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="350" selection-end="350" vertical-scroll-proportion="0.034965035" vertical-offset="80" max-vertical-offset="795">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/layout/photo_list.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/menu/main.xml">
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/drawable-xxhdpi/mywicgenie.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/NoteDetailActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="244" selection-end="244" vertical-scroll-proportion="0.18828452" vertical-offset="0" max-vertical-offset="478">
+        <state line="16" column="13" selection-start="356" selection-end="356" vertical-scroll-proportion="0.18010291" vertical-offset="0" max-vertical-offset="583">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/menu/virtual_reality.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="39" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
           <folding>
-            <element signature="e#132#157#0" expanded="true" />
+            <element signature="e#135#156#0" expanded="false" />
+            <marker date="1382010580000" expanded="true" signature="473:591" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="0" selection-start="1626" selection-end="1626" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/layout/list_dialog.xml">
+      <provider editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="18" selection-start="694" selection-end="698" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/res/drawable-xxhdpi/shoplist.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab2/src/main/java/com/rbiniaz/mobpro/lab2/VirtualRealityActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="225" selection-start="7173" selection-end="7173" vertical-scroll-proportion="0.9966555" vertical-offset="1909" max-vertical-offset="2820">
+          <folding />
         </state>
       </provider>
     </entry>

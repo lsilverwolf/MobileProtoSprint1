@@ -3,14 +3,10 @@ package com.rbiniaz.mobpro.lab2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -31,21 +27,21 @@ public class MainActivity extends Activity {
         takePhoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToVirtualReality(view);
+                goToVirtualReality(true);
             }
         });
 
         usePrevious.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToVirtualReality(view);
+                goToVirtualReality(true);
             }
         });
 
         showAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                goToVirtualReality(view);
+                goToVirtualReality(false);
             }
         });
 
@@ -53,19 +49,10 @@ public class MainActivity extends Activity {
     }
 
 
-    public void goToVirtualReality(View view){
+    public void goToVirtualReality(boolean useList){
         Intent i = new Intent(this, VirtualRealityActivity.class);
-        startActivity(i);
-
-
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
+        i.putExtra("useList", useList);
+        startActivityForResult(i, 0);
     }
 
 }
